@@ -29,7 +29,7 @@ try:
 except KeyError:
     print("ERROR: BOT_TOKEN or CHANNEL_ID not found in Repl.it Secrets.")
     print("Please add BOT_TOKEN and CHANNEL_ID to the Secrets tab.")
-                        exit()
+    exit()
                         except ValueError:
                             print(f"ERROR: CHANNEL_ID ('{channel_id_str}') is not a valid integer.")
                                 exit()
