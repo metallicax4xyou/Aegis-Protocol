@@ -24,7 +24,7 @@ last_milestone_check_value = timer # To prevent multiple triggers for same miles
 # Access secrets from environment variables
 try:
     bot_token = os.environ['BOT_TOKEN']
-        channel_id_str = os.environ['CHANNEL_ID']
+        channel_id_str = os.environ['1354327441673293886']
             TARGET_CHANNEL_ID = int(channel_id_str)
             except KeyError:
                 print("ERROR: BOT_TOKEN or CHANNEL_ID not found in Repl.it Secrets.")
