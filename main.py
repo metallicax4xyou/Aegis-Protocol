@@ -172,7 +172,7 @@ async def attack(ctx, *, message: str):
     if timer <= 0:
         await ctx.send("The game has already been won! Aegis is defeated.")
         return
-    if timer >= max_timer:
+    if timer >= max_timer: # Loop only checks for AI win condition
         await ctx.send(f"The game is over! Aegis reached the maximum timer value ({max_timer:.1f}).")
         return
 
