@@ -11,7 +11,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # --- Game State Variables ---
-timer = 1000.0  # Use float for decay
+timer = 0.0  # Use float for decay
 max_timer = 1000.0
 ai_personality = random.choice(["Aggressive", "Defensive", "Curious"])
 blocked_keywords = {"Aggressive": {}, "Defensive": {}, "Curious": {}} # Per-personality {word: timestamp}
