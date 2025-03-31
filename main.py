@@ -312,7 +312,7 @@ async def aegis_ai_loop():
     decay_this_interval = decay_rate_per_second * aegis_ai_loop.seconds
     timer -= decay_this_interval
     print(f"DEBUG: After decay: Timer={timer:.2f}")
-    if timer < 0: timer = 0 # Prevent going below zero from decay
+    # if timer < 0: timer = 0 # Prevent going below zero from decay
 
     # --- AI Defense Action ---
     if random.random() < 0.5: # 50% chance to defend each minute
